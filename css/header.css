@@ -1,0 +1,107 @@
+header {
+  position: absolute;
+  margin-bottom: 0%;
+  width: 90%;
+  height: auto;
+}
+header h1.tit {
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  color: salmon;
+}
+header ul.nav {
+  display: flex;
+  padding-inline-start: none;
+  justify-content: space-between;
+}
+header ul.nav .item {
+  list-style-type: none;
+}
+header ul.nav .item:first-child {
+  color: salmon;
+}
+header ul.nav .item .link {
+  font-family: "IBM Plex Mono", monospace;
+  text-decoration: none;
+  color: grey;
+}
+header ul.nav .item .link:hover {
+  color: salmon;
+}
+header ul.navmob {
+  display: none;
+  padding-inline-start: none;
+}
+header .dropdown-container {
+  position: relative;
+}
+header .dropdown-container .link:first-child {
+  display: inline-block;
+}
+header .dropdown-container .dropdown-content {
+  display: none;
+  position: absolute;
+}
+header .dropdown-container:hover .dropdown-content {
+  display: block;
+  margin-right: 250px;
+}
+header .dropdown-content .dropdown-item {
+  list-style-type: none;
+  text-align: center;
+}
+header .dropdown-content .dropdown-item .link {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  header ul.nav {
+    display: none;
+  }
+  header ul.navmob {
+    display: flex;
+    padding-inline-start: none;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: salmon;
+  }
+  header ul.navmob .item {
+    list-style-type: none;
+    margin: auto;
+  }
+  header ul.navmob .item .link {
+    font-family: "IBM Plex Mono", monospace;
+    text-decoration: none;
+    background-color: salmon;
+    color: black;
+  }
+  header ul.navmob .item .link:hover {
+    color: black;
+  }
+  header ul.navmob .dropdown-container {
+    position: relative;
+  }
+  header ul.navmob .dropdown-container .link:first-child {
+    display: inline-block;
+  }
+  header ul.navmob .dropdown-container .dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 0;
+    left: -59%;
+  }
+  header ul.navmob .dropdown-container:hover .dropdown-content {
+    display: block;
+  }
+  header ul.navmob .dropdown-container .dropdown-content .dropdown-item {
+    list-style-type: none;
+    justify-content: flex-start;
+  }
+  header ul.navmob .dropdown-container .dropdown-content .dropdown-item .link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

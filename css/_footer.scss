@@ -1,0 +1,41 @@
+footer{
+    
+   margin: auto;
+   align-content: center;
+   width: 90%;
+   height: auto;
+   border-bottom: grey solid 1px;
+ .flista{
+    padding-inline-start: 0px;
+    display: flex;
+    justify-content: space-between;
+    .itlist{
+       // font: 1rem;
+        list-style-type: none;
+        .links{        
+        color: grey;    
+        font-family:"IBM Plex Mono", monospace;
+        text-decoration: none;
+        }
+    }
+   }
+   .arrow{
+    display: none;
+    }
+    @media (max-width: 600px) {
+        .hide{
+        display: none;
+        }
+        .arrow{
+            padding-inline-start: 0px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+           
+          
+            color: salmon;
+        }
+
+    }
+    
+}

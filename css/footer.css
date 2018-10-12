@@ -1,0 +1,37 @@
+footer {
+  margin: auto;
+  align-content: center;
+  width: 90%;
+  height: auto;
+  border-bottom: grey solid 1px;
+}
+footer .flista {
+  padding-inline-start: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .flista .itlist {
+  list-style-type: none;
+}
+footer .flista .itlist .links {
+  color: grey;
+  font-family: "IBM Plex Mono", monospace;
+  text-decoration: none;
+}
+footer .arrow {
+  display: none;
+}
+@media (max-width: 600px) {
+  footer .hide {
+    display: none;
+  }
+  footer .arrow {
+    padding-inline-start: 0px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: salmon;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.main-menu {
+  display: flex;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.menu {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-link {
+  position: absolute;
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 60px;
+}
+
+.button-link:hover {
+  background-color: #FF8B61;
+}
+
+.image-menu {
+  width: 85%;
+  height: auto;
+  margin-top: 25px;
+}
+
+.image-menu img {
+  width: 100%;
+  border-radius: 20%;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  z-index: 2;
+}
+.carousel .img {
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  margin: 5px;
+}
+.carousel .img:first-of-type {
+  margin-left: 0;
+}
+.carousel .img:last-of-type {
+  margin-right: 0;
+}
+.carousel .img img {
+  height: 100%;
+  width: 100%;
+}
+
+.img:hover .slideup {
+  transform: translateY(-100%);
+  position: absolute;
+  width: 100%;
+}
+
+.slideup {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  transition: transform 250ms;
+  vertical-align: bottom;
+}
+.slideup span {
+  display: block;
+  background-color: rgba(250, 143, 95, 0.5);
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+  padding: 7%;
+  font-size: 10px;
+}
+
+@media (max-width: 800px) {
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carousel .img {
+    display: none;
+    margin: 5% 0;
+  }
+  .carousel .img:first-of-type {
+    display: block;
+  }
+  .carousel .slideup {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=receta.css.map */

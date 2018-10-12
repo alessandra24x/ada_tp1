@@ -5,12 +5,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <title></title>
 </head>
 
 <body>
+    <header id="header">
+        <div>
+            <h1 class="tit">Mi Blog de Cocina</h1>
+        </div>
+        <nav class="nav-content">
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#">HOME</a></li>
+                <li class="item">
+                    <div class="dropdown-container">
+                        <a class="link" data-dropdown="open" href="#carousel">
+                            PLATOS
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-content">
+                            <li class="dropdown-item">
+                                <a class="link" href="receta/receta.html"  target="_blank">Ensalada</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="link">Carne</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="link">Helado</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item"><a class="link" href="#sobremi">SOBRE MÍ</a></li>
+                <li class="item"><a class="link" href="#">CONTACTOS</a></li>
+
+            </ul>
+            <ul class="navmob">
+
+                <li class="item">
+                    <div class="dropdown-container">
+                        <a class="link" data-dropdown="open">
+                            <i class="fas fa-bars"></i>
+                            MENU
+                        </a>
+                        <ul class="dropdown-content">
+                            <li class="dropdown-item">
+                                <a class="link">HOME</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="link" href="#carousel">PLATOS</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="link" href="#sobremi">SOBRE MÍ</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="link">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="carousel" id="carousel">
+        <div class="img">
+            <a href="receta/receta.html"  target="_blank"><img src="images/img-1.jpg"></a>
+            <div class="slideup">
+                <span>
+                    <p>Septiembre 21, 2018 | 5 comentarios</p>
+                    <h3>"Los mejores tacos del pais, en pocos pasos"</h3>
+                </span>
+            </div>
+        </div>
+        <div class="img">
+            <img src="images/img-2.jpg">
+        </div>
+        <div class="img">
+            <img src="images/img-3.jpg">
+        </div>
+        <div class="img">
+            <img src="images/img-4.jpg">
+        </div>
+    </div>
+
+    <div class="main-menu">
+        <div class="menu">
+            <div class="image-menu">
+                <img src="images/platos.jpeg" alt="platos">
+            </div>
+            <input class="button-link" type="button" value="PLATOS">
+        </div>
+        <div class="menu">
+            <div class="image-menu">
+                <img src="images/recetas.JPG" alt="recetas">
+            </div>
+            <input class="button-link" type="button" value="RECETAS">
+        </div>
+        <div class="menu">
+            <div class="image-menu">
+                <img src="images/exoticos.JPG" alt="exoticos">
+            </div>
+            <input class="button-link" type="button" value="EXÓTICOS">
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-8 d-none d-md-block">
@@ -22,7 +127,7 @@
                     <p>20 de abril | Recetas Veganas</p>
                 </div>
             </div>
-            <aside class="col-md-4 col-xs-12">
+            <aside class="col-md-4 col-xs-12" id="sobremi">
                 <div class="row">
                     <div class="profile" class="col-md-12">
                         <h5>SOBRE MI</h5>
@@ -37,6 +142,73 @@
         </div>
 
     </div>
+    <div class="blog-cont">
+        <div class="container-blog">
+            <div class="img-container">
+                <img src="images/nota1.jpg" />
+            </div>
+            <div class="description">
+                <div class="text-content">
+                    <div class="text-header">
+                        <div class="data1" <span>By Maria | Mayo 19, 2017</span>
+                        </div>
+                        <div class="data2">
+                            <span><i class="far fa-heart"></i>29 </span>
+                            <span><i class="far fa-comments"></i>18</span>
+                            <span><i class="fas fa-share-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="recipe">
+                    <h1 class="entrytitle">Delicias dulces</h1>
+                    <span>En este titulo podran ver una receta muy simple, muy sana y muy rica.</span>
+                    <input type="button" class="readmore" value="Leer mas" />
+                </div>
+            </div>
+        </div>
+        <div class="container-blog">
+            <div class="img-container">
+                <img src="images/nota2.jpg" />
+            </div>
+            <div class="description">
+                <div class="text-content">
+                    <div class="text-header">
+                        <div class="data1"> <span>By Maria | Mayo 19, 2017</span>
+                        </div>
+                        <div class="data2">
+                            <span><i class="far fa-heart"></i>43 </span>
+                            <span><i class="far fa-comments"></i>70 </span>
+                            <span><i class="fas fa-share-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="recipe">
+                    <h1 class="entrytitle">Comidas simples</h1>
+                    <span>En este titulo podran ver una receta muy simple, muy sana y muy rica.</span>
+                    <input type="button" class="readmore" value="Leer mas" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <ul class="flista">
+            <li class="itlist"><a class="links" href="#header"><i class="fab fa-facebook-f"></i>
+                    <span class="hide"> FACEBOOK</span></a></li>
+            <li class="itlist"><a class="links" href="#header"><i class="fab fa-twitter"></i>
+                    <span class="hide"> TWITTER</span></a></li>
+            <li class="itlist"><a class="links" href="#header"><i class="fab fa-google-plus-g"></i>
+                    <span class="hide"> GOOGLE+</span></a></li>
+            <li class="itlist"><a class="links" href="#header"><i class="fab fa-linkedin"></i>
+                    <span class="hide"> LINKEDIN</span></a></li>
+            <li class="itlist"><a class="links" href="#header"><i class="fab fa-instagram"></i>
+                    <span class="hide"> INSTAGRAM</span></a></li>
+            <li class="itlist"><a class="links" href="#header"><i class="fab fa-youtube"></i>
+                    <span class="hide"> YOUTUBE</span></a></li>
+        </ul>
+        <div><a class="arrow" href="#header"><i class="fas fa-arrow-circle-up"></i></a></div>
+    </footer><br/>
 </body>
 
 </html>

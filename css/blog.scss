@@ -1,0 +1,93 @@
+body {
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.blog-cont {
+    width: 50%;
+    height: auto;
+    
+    .container-blog {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-inline-start: 10%;
+    }
+    }
+
+.img-container {
+    width: 45%;
+    height: auto;
+    img {
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+
+.description {
+    width: 55%;
+    margin-top: 30px;
+    margin-bottom: 32px;
+    margin-left: 30px;
+}
+
+.text-content {
+    width: 100%;
+}
+
+.text-header {
+    color: grey;
+    font-size: 0.7em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe {
+    h1 {
+        margin-left: 10px;
+        font-size: 1em;
+    }
+    span {
+        font-size: 0.7em;
+    }
+    input {
+        display: block;
+        margin-top: 30px;
+        background-color: #FDE2DA;
+        border: none;
+        border-radius: 10px;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: bold;
+        width: 130px;
+        height: 35px;
+        font-size: 0.7em;
+    }
+}
+@media (max-width: 600px) {
+    .blog-cont {
+        width: 70%;
+        height: auto;
+        
+        .description {
+            width: 70%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 5%;
+        }
+    }
+    .container-blog {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-inline-start: 10%;
+        .img-container {
+            width: 90%;
+            height: auto;
+            img {
+                width: 100%;
+                border-radius: 15px;
+                display: none;
+            }
+        }
+    }
+}

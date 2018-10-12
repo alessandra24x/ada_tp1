@@ -1,0 +1,783 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  color: gray;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .h1 {
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  font-size: 100px;
+  color: #FF7F50;
+}
+
+.dropdown {
+  display: none;
+}
+
+.nav {
+  width: 60%;
+}
+
+ul.list {
+  display: flex;
+  justify-content: space-around;
+  font-family: "IBM Plex Mono", monospace;
+  color: grey;
+  list-style: none;
+}
+ul.list select {
+  border: none;
+  font-family: "IBM Plex Mono", monospace;
+  color: grey;
+}
+ul.list select li:hover {
+  color: #FF7F50;
+}
+
+ul.list {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  color: #FF7F50;
+}
+
+.container-receta {
+  display: flex;
+  justify-content: center;
+}
+
+.contenido-receta {
+  width: 45%;
+  font-size: 15px;
+}
+.contenido-receta .header-receta h2 {
+  padding: 0 2%;
+  color: black;
+}
+.contenido-receta .header-receta .header-top {
+  display: flex;
+  justify-content: space-between;
+}
+.contenido-receta .elena {
+  border-left: #FF8B61 solid 1px;
+  margin: 5% 0;
+  padding: 0 4%;
+}
+.contenido-receta .elena p {
+  color: black;
+}
+.contenido-receta .elena span {
+  text-transform: uppercase;
+}
+
+.icons i {
+  padding: 2px;
+}
+.icons i span {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.ingredientes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ingredientes ul li {
+  padding: 1%;
+  text-indent: -0.7em;
+}
+.ingredientes ul li::before {
+  content: "• ";
+  color: #FF8B61;
+}
+
+.main-s1 {
+  margin: 100px auto;
+}
+
+.section1 {
+  width: 80%;
+  height: 556px;
+  margin: 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.section1 .video {
+  width: 70%;
+  height: 100%;
+  display: flex;
+}
+.section1 .video iframe {
+  width: 98%;
+  height: auto;
+}
+.section1 .about {
+  width: 28%;
+  height: 100%;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section1 .about .title {
+  background-color: #FF9670;
+  font-size: 18px;
+}
+.section1 .about .title p {
+  margin: 5;
+}
+.section1 .about .profilepic {
+  width: 280px;
+  height: auto;
+  margin: auto;
+}
+.section1 .about .profilepic img {
+  width: 100%;
+  border-radius: 50%;
+}
+.section1 .about .name {
+  font-size: 20px;
+  margin: 0;
+}
+.section1 .about .description {
+  color: gray;
+  margin: 0;
+}
+.section1 .about .newsletter {
+  background-color: #FF9670;
+  font-size: 18px;
+}
+.section1 .about .newsletter p {
+  margin: 5;
+}
+
+.videodescr {
+  width: 80%;
+  margin: auto;
+}
+.videodescr p {
+  margin: 0;
+  color: gray;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+/*home*/
+/*receta*/
+.container-socialnet {
+  width: auto;
+  height: 410px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.container-socialnet .container-photo {
+  width: 53%;
+  height: 100%;
+}
+.container-socialnet .container-photo img {
+  width: auto;
+  border-radius: 10%;
+}
+.container-socialnet .container-icons {
+  width: 8%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon1 {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #3b5998;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon1 p {
+  text-align: center;
+}
+.icon1 .fa-facebook-f {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.icon2 {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #55acee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon2 p {
+  text-align: center;
+}
+.icon2 .fa-twitter {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.icon3 {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #dd4b39;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon3 p {
+  text-align: center;
+}
+.icon3 .fa-google-plus-g {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.icon4 {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #8f6247;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon4 p {
+  text-align: center;
+}
+.icon4 .fa-instagram {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.icon5 {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #cb2027;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon5 p {
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  width: 70%;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  border-top: 1px solid grey;
+  margin: auto;
+}
+.box .nota {
+  width: 230px;
+  height: 150px;
+  border-radius: 50px;
+  padding: 20px;
+  display: flex;
+}
+.box .description {
+  width: 45%;
+  padding: 20px;
+  color: grey;
+}
+.box .description h3 {
+  color: black;
+  padding: 5px;
+}
+.box .description a {
+  text-decoration: none;
+  color: black;
+  background-color: #FF9670;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 5px 30px;
+}
+.box .description .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.redessociales {
+  padding: 10px;
+  color: grey;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.redessociales a {
+  text-decoration: none;
+  color: gray;
+}
+
+.icono-arrow {
+  display: none;
+}
+
+.fa-pinterest-p {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .list {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+    background-color: #FF7F50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 90%;
+    text-align: center;
+    font-family: "IBM Plex Mono", monospace;
+    align-items: center;
+    position: relative;
+  }
+  .menu-mobile .button-menu {
+    border: none;
+    background-color: #FF7F50;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .menu-options {
+    list-style: none;
+    display: none;
+    border: none;
+    left: 25%;
+    position: absolute;
+  }
+  .menu-options a:hover {
+    color: white;
+  }
+
+  a:hover {
+    color: black;
+  }
+
+  .button-menu:hover {
+    color: black;
+  }
+  .button-menu:hover .menu-options {
+    list-style: none;
+    display: block;
+    background-color: #FF7F50;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: absolute;
+    z-index: 1;
+    border: none;
+    margin: 0;
+  }
+  .button-menu:hover .menu-options a:hover {
+    color: white;
+  }
+
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carousel .img {
+    display: none;
+    margin: 5% 0;
+  }
+  .carousel .img:first-of-type {
+    display: block;
+  }
+  .carousel .slider {
+    display: none;
+  }
+
+  .contenido-receta {
+    width: 100%;
+    font-size: initial;
+    margin: 0 5%;
+  }
+  .contenido-receta .header-receta h2 {
+    text-align: center;
+  }
+  .contenido-receta .elena {
+    padding: 0 10%;
+    margin: 10% 0;
+  }
+  .contenido-receta .ingredientes ul li {
+    text-indent: -0.4em;
+  }
+}
+@media (max-width: 800px) {
+  p.articulo {
+    text-align: center;
+  }
+
+  .icono-arrow {
+    color: #fa7855;
+    bottom: 15px;
+    display: inline-block;
+  }
+  .icono-arrow .fa-arrow-circle-up {
+    position: absolute;
+    z-index: 1;
+    text-decoration: none;
+    font-size: 30px;
+    color: #FF8B61;
+    margin-left: 50%;
+  }
+}
+.menu-mobile {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .nav {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+    background-color: #FF7F50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+  }
+  .menu-mobile .button-menu {
+    border: none;
+    background-color: #FF7F50;
+    color: white;
+    font-size: 20px;
+  }
+  .menu-mobile .button-menu a {
+    font-size: 30px;
+    color: white;
+  }
+}
+.menu-options {
+  list-style: none;
+}
+.menu-options a:hover {
+  color: white;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+.banner img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.archive {
+  color: black;
+  flex-direction: column;
+}
+.archive span {
+  color: grey;
+}
+
+@media (max-width: 800px) {
+  .container-socialnet {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 20px auto 5px;
+  }
+  .container-socialnet .container-photo {
+    width: 95%;
+    height: auto;
+    margin: 10px auto 5px;
+  }
+  .container-socialnet .container-photo img {
+    width: 100%;
+    border-radius: 10%;
+  }
+  .container-socialnet .container-icons {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .icon1 {
+    width: 40px;
+    height: 40px;
+    background-color: #3b5998;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .icon1 p {
+    text-align: center;
+  }
+  .icon1 .fa-facebook-f {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+  }
+
+  .icon2 {
+    width: 40px;
+    height: 40px;
+    background-color: #55acee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .icon2 p {
+    text-align: center;
+  }
+  .icon2 .fa-twitter {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+  }
+
+  .icon3 {
+    width: 40px;
+    height: 40px;
+    background-color: #dd4b39;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .icon3 p {
+    text-align: center;
+  }
+  .icon3 .fa-google-plus-g {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+  }
+
+  .icon4 {
+    width: 40px;
+    height: 40px;
+    background-color: #8f6247;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .icon4 p {
+    text-align: center;
+  }
+  .icon4 .fa-instagram {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+  }
+
+  .icon5 {
+    width: 40px;
+    height: 40px;
+    background-color: #cb2027;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .icon5 p {
+    text-align: center;
+  }
+  .icon5 .fa-pinterest-p {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+  }
+}
+footer {
+  margin: auto;
+  align-content: center;
+  width: 90%;
+  height: auto;
+  border-bottom: grey solid 1px;
+}
+footer .flista {
+  padding-inline-start: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .flista .itlist {
+  list-style-type: none;
+}
+footer .flista .itlist .links {
+  color: grey;
+  font-family: "IBM Plex Mono", monospace;
+  text-decoration: none;
+}
+footer .arrow {
+  display: none;
+}
+@media (max-width: 600px) {
+  footer .hide {
+    display: none;
+  }
+  footer .arrow {
+    padding-inline-start: 0px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: salmon;
+  }
+}
+
+header {
+  margin-bottom: 0%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+header h1.tit {
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  color: salmon;
+}
+header ul.nav {
+  display: flex;
+  padding-inline-start: none;
+  justify-content: space-between;
+}
+header ul.nav .item {
+  list-style-type: none;
+}
+header ul.nav .item:first-child {
+  color: salmon;
+}
+header ul.nav .item .link {
+  font-family: "IBM Plex Mono", monospace;
+  text-decoration: none;
+  color: grey;
+}
+header ul.nav .item .link:hover {
+  color: salmon;
+}
+header ul.navmob {
+  display: none;
+  padding-inline-start: none;
+}
+header .dropdown-container {
+  position: relative;
+}
+header .dropdown-container .link:first-child {
+  display: inline-block;
+}
+header .dropdown-container .dropdown-content {
+  display: none;
+  position: absolute;
+}
+header .dropdown-container:hover .dropdown-content {
+  display: block;
+  margin-right: 250px;
+}
+header .dropdown-content {
+  z-index: 8;
+}
+header .dropdown-content .dropdown-item {
+  list-style-type: none;
+  text-align: center;
+  background-color: seashell;
+}
+header .dropdown-content .dropdown-item .link {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  header ul.nav {
+    display: none;
+  }
+  header ul.navmob {
+    display: flex;
+    padding-inline-start: none;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: salmon;
+  }
+  header ul.navmob .item {
+    list-style-type: none;
+    margin: auto;
+  }
+  header ul.navmob .item .link {
+    font-family: "IBM Plex Mono", monospace;
+    text-decoration: none;
+    background-color: salmon;
+    color: black;
+  }
+  header ul.navmob .item .link:hover {
+    color: black;
+  }
+  header ul.navmob .dropdown-container {
+    position: relative;
+  }
+  header ul.navmob .dropdown-container .link:first-child {
+    display: inline-block;
+  }
+  header ul.navmob .dropdown-container .dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 0;
+    left: -59%;
+  }
+  header ul.navmob .dropdown-container:hover .dropdown-content {
+    display: block;
+  }
+  header ul.navmob .dropdown-container .dropdown-content .dropdown-item {
+    list-style-type: none;
+    justify-content: flex-start;
+  }
+  header ul.navmob .dropdown-container .dropdown-content .dropdown-item .link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

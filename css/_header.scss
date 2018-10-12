@@ -1,0 +1,160 @@
+header{
+    margin-bottom: 0%;
+    
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25%;
+    padding-right: 25%;
+   
+
+
+    h1.tit{
+        font-family: "Indie Flower", cursive;
+        text-align: center;
+        color: salmon;
+    }
+
+
+
+    ul.nav{
+        display: flex;
+        padding-inline-start: none;
+        justify-content: space-between;
+        .item{
+            list-style-type: none;
+            &:first-child{
+                color: salmon;
+                }
+            .link{        
+                font-family: "IBM Plex Mono", monospace;
+                text-decoration: none;
+                color: grey;
+                &:hover{
+                    color: salmon;
+                    }
+                }
+            }
+    }
+    ul.navmob{
+        display: none;
+        padding-inline-start: none;
+    }
+     
+    .dropdown-container {
+        position: relative;
+        
+       
+        .link {
+             // PRIMER HIJO CON CLASE link DENTRO DEL .dropdown-container
+             &:first-child {
+                 display: inline-block; // PARA QUE CREZCA EN BASE A SU CONTENIDO
+                }
+        }
+            .dropdown-content {
+                // AL PRINCIPIO NO LO MOSTRAMOS
+                display: none;
+                position: absolute;
+               
+                 // SIN ESTO EL CONTENIDO QUE SIGUE SE DESPLAZARIA
+            }
+            &:hover .dropdown-content {
+                display: block; 
+                margin-right: 250px;// CUANDO .dropdown-container TIENE HOVER LE CAMBIAMOS EL ESTILO AL .dropdown-content
+            }
+    }
+        .dropdown-content {
+            z-index: 8;
+            
+            .dropdown-item{
+                list-style-type: none;
+                text-align: center;
+                background-color: seashell;
+                
+                .link {
+                    width: 100%;
+                }
+            }
+        }
+    @media (max-width: 600px) {
+        ul.nav{
+            display: none;
+        }
+        ul.navmob{
+            display: flex;
+            padding-inline-start: none;
+            justify-content: space-between;
+            border-radius: 5px;
+            //display: block;
+            //justify-content: center;
+            
+            background-color: salmon;
+            
+            .item{
+                list-style-type: none;
+                margin: auto;
+                //
+
+                
+            
+                .link{        
+                    font-family: "IBM Plex Mono", monospace;
+                    text-decoration: none;
+                    background-color: salmon;
+                    color: black;
+                   
+                    &:hover{
+                        color: black;
+                        }
+                    }
+                }
+                        .dropdown-container {
+                            position: relative;
+                            
+                            
+                            .link {
+                                 // PRIMER HIJO CON CLASE link DENTRO DEL .dropdown-container
+                                 &:first-child {
+                                     display: inline-block; 
+                                     // PARA QUE CREZCA EN BASE A SU CONTENIDO
+                                    }
+                            }
+                                .dropdown-content {
+                                    // AL PRINCIPIO NO LO MOSTRAMOS
+                                    display: none;
+                                    position: absolute; 
+                                    padding: 0;
+                                    left: -59%;
+                                    // SIN ESTO EL CONTENIDO QUE SIGUE SE DESPLAZARIA
+                                }
+                                &:hover .dropdown-content {
+                                    display: block;
+                                     // CUANDO .dropdown-container TIENE HOVER LE CAMBIAMOS EL ESTILO AL .dropdown-content
+                                }
+                       
+                            
+                                .dropdown-content {
+                                .dropdown-item{
+                                    list-style-type: none;
+                                
+                                    justify-content: flex-start;
+                                    
+                                   
+                                    
+                                    .link {
+                                        padding-left: 1rem;
+                                        padding-right: 1rem;
+                                        color: white;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+        }
+        
+
+    }
+
+}
+
+//*# sourceMappingURL=styles.scss.map */
